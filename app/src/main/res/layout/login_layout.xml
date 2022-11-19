@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".LoginActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            app:collapsedTitleTextColor="?attr/colorControlNormal"
+            app:expandedTitleTextColor="@android:color/transparent"
+            app:contentScrim="?attr/colorControlNormal"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            android:id="@+id/colToolBar">
+
+            <TextView
+                android:id="@+id/loginTextCollapse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:gravity="center_horizontal"
+                android:text="@string/log_in"
+                android:textAllCaps="true"
+                android:textColor="@color/holo_red_light"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                tools:targetApi="p" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:outlineAmbientShadowColor="@android:color/transparent"
+                android:outlineSpotShadowColor="@android:color/transparent"
+                android:theme="@style/PqTheme"
+                app:title="Log in"/>
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emailTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="20dp"
+                android:hint="@string/email"
+                android:letterSpacing="0.04"
+                android:orientation="vertical"
+                app:endIconMode="clear_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:startIconDrawable="@drawable/ic_mailot">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/EmailEdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pq_neutral_button"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    android:letterSpacing="0.04"
+                    android:outlineAmbientShadowColor="@android:color/transparent"
+                    android:outlineSpotShadowColor="@android:color/transparent"
+                    android:textSize="18sp"
+                    tools:targetApi="p" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/PasswordTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:hint="@string/password"
+                android:letterSpacing="0.04"
+                app:boxCornerRadiusBottomEnd="10dp"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:boxCornerRadiusTopStart="10dp"
+                app:endIconMode="password_toggle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/emailTextLayout"
+                app:startIconDrawable="@drawable/ic_key">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/PasswordEdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pq_neutral_button"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:letterSpacing="0.04"
+                    android:outlineAmbientShadowColor="@android:color/transparent"
+                    android:outlineSpotShadowColor="@android:color/transparent"
+                    android:textSize="18sp"
+                    tools:targetApi="p" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/PasswordTextLayout">
+
+                <TextView
+                    android:id="@+id/forgotPasswordTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="0.04"
+                    android:text="@string/forgotten_your_password"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/forgotPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:letterSpacing="0.04"
+                    android:text="@string/reset_here"
+
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/buttonsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linearLt">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/loginBtn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/pq_button"
+                        android:letterSpacing="0.04"
+                        android:outlineAmbientShadowColor="@android:color/transparent"
+                        android:outlineSpotShadowColor="@android:color/transparent"
+                        android:shadowColor="@android:color/transparent"
+                        android:text="@string/log_in"
+                        android:textStyle="bold"
+                        android:textColor="@color/white2"
+                        android:textAllCaps="false"
+                        android:textSize="18sp"
+                        app:layout_constraintEnd_toStartOf="@+id/signUpBtn"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ProgressBar
+                        android:id="@+id/loginProgress"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:indeterminateTint="@color/holo_red_light"
+                        android:visibility="invisible"
+                        app:layout_constraintBottom_toBottomOf="@+id/loginBtn"
+                        app:layout_constraintEnd_toEndOf="@+id/loginBtn"
+                        app:layout_constraintStart_toStartOf="@+id/loginBtn"
+                        app:layout_constraintTop_toTopOf="@+id/loginBtn" />
+
+                    <Button
+                        android:id="@+id/signUpBtn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/pq_button_outline"
+                        android:letterSpacing="0.04"
+                        android:outlineAmbientShadowColor="@android:color/transparent"
+                        android:outlineSpotShadowColor="@android:color/transparent"
+                        android:shadowColor="@android:color/transparent"
+                        android:text="@string/sign_up"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:textColor="@color/holo_red_light"
+                        android:textSize="18sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/loginBtn"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="0dp"
+                android:layout_height="1.5dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="49dp"
+                android:layout_marginEnd="10dp"
+                android:background="#A3A3A3"
+                android:outlineAmbientShadowColor="@android:color/transparent"
+                android:outlineSpotShadowColor="@android:color/transparent"
+                app:layout_constraintEnd_toStartOf="@id/signInWith"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/buttonsLayout" />
+
+            <TextView
+                android:id="@+id/signInWith"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:outlineAmbientShadowColor="@android:color/transparent"
+                android:outlineSpotShadowColor="@android:color/transparent"
+                android:text="@string/or_sign_in_with"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/view"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/buttonsLayout" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1.5dp"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="49dp"
+                android:layout_marginEnd="20dp"
+                android:background="#A3A3A3"
+                android:outlineAmbientShadowColor="@android:color/transparent"
+                android:outlineSpotShadowColor="@android:color/transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@id/signInWith"
+                app:layout_constraintTop_toBottomOf="@id/buttonsLayout"
+                tools:targetApi="p" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/signInWith">
+
+                <ImageButton
+                    android:id="@+id/googleBtn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/pq_neutral_button_rounded"
+                    android:src="@drawable/ic_google"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/signInWith"
+                    tools:ignore="ContentDescription" />
+
+                <ImageButton
+                    android:id="@+id/FbBtn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/pq_neutral_button_rounded"
+                    android:src="@drawable/ic_facebook"
+                    app:layout_constraintBottom_toBottomOf="@id/googleBtn"
+                    app:layout_constraintStart_toEndOf="@+id/googleBtn"
+                    app:layout_constraintTop_toTopOf="@id/googleBtn"
+                    tools:ignore="ContentDescription" />
+
+                <ImageButton
+                    android:id="@+id/twitterBtn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/pq_neutral_button_rounded"
+                    android:src="@drawable/ic_twitter"
+                    app:layout_constraintBottom_toBottomOf="@id/FbBtn"
+                    app:layout_constraintStart_toEndOf="@+id/FbBtn"
+                    app:layout_constraintTop_toTopOf="@id/FbBtn"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

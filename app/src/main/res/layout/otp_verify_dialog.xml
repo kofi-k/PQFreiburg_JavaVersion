@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical"
+        android:elevation="10dp"
+        app:cardUseCompatPadding="true"
+        android:padding="10dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/oops"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/verify_otp"
+                android:textStyle="bold"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:gravity="center_horizontal"
+                android:letterSpacing="0.05"
+                android:textColor="@color/holo_red_light"
+                android:textSize="24sp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/resetGuide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/segoe_ui"
+                android:letterSpacing="0.05"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="fill_horizontal"
+                android:layout_marginTop="20dp"
+                android:text="@string/provide_the_the_6_digit_code_sent_to_the_number_you_provided"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@id/oops" />
+
+            <EditText
+                android:id="@+id/OTPCodeEdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/pq_neutral_button"
+                android:fontFamily="@font/segoe_ui"
+                android:hint="OTP code"
+                android:inputType="phone"
+                android:letterSpacing="0.04"
+                android:layout_marginTop="20dp"
+                android:minHeight="48dp"
+                android:outlineAmbientShadowColor="@android:color/transparent"
+                android:outlineSpotShadowColor="@android:color/transparent"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/resetGuide" />
+
+
+            <Button
+                android:id="@+id/verifyOTP"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/pq_button"
+                android:letterSpacing="0.05"
+                android:outlineAmbientShadowColor="@android:color/transparent"
+                android:outlineSpotShadowColor="@android:color/transparent"
+                android:text="@string/confirm"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:shadowColor="@android:color/transparent"
+                android:textColor="@color/white2"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/cancelOTP"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/OTPCodeEdt" />
+
+            <ProgressBar
+                android:id="@+id/otpVerifyProgress"
+                android:layout_width="38dp"
+                android:layout_height="40dp"
+                android:indeterminateTint="@color/holo_red_light"
+                app:layout_constraintBottom_toBottomOf="@+id/verifyOTP"
+                app:layout_constraintEnd_toEndOf="@+id/verifyOTP"
+                app:layout_constraintStart_toStartOf="@+id/verifyOTP"
+                app:layout_constraintTop_toTopOf="@+id/verifyOTP" />
+
+            <TextView
+                android:id="@+id/cancelOTP"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:gravity="center"
+                android:letterSpacing="0.05"
+                android:textStyle="bold"
+                android:text="CANCEL"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/verifyOTP"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/verifyOTP"
+                app:layout_constraintTop_toTopOf="@+id/verifyOTP" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

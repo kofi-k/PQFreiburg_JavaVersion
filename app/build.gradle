@@ -1,0 +1,108 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        applicationId "com.kofikay.pqfreiburg13"
+        minSdk 21
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    viewBinding{
+        enabled = true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding true
+        dataBinding true
+    }
+    sourceSets {
+        main {
+            res {
+                srcDirs 'src\\main\\res', 'src\\main\\res\\2'
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation "androidx.constraintlayout:constraintlayout-compose:1.0.1"
+    implementation 'com.google.android.material:material:1.6.1'
+
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    implementation group: 'com.googlecode.libphonenumber', name: 'libphonenumber', version: '8.12.42'
+    implementation 'com.agrawalsuneet.androidlibs:dotsloader:1.4'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    implementation 'androidx.appcompat:appcompat:1.4.2'
+    
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.navigation:navigation-fragment:2.4.2'
+    implementation 'androidx.navigation:navigation-ui:2.4.2'
+    implementation 'com.google.firebase:firebase-auth:21.0.5'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    implementation 'androidx.annotation:annotation:1.3.0'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1'
+    implementation 'com.google.android.gms:play-services-ads:21.0.0'
+
+    implementation "androidx.fragment:fragment:1.4.1"
+
+    // This library is used for crop image feature
+    api 'com.theartofdev.edmodo:android-image-cropper:2.8.+'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.ss.bannerslider:bannerslider:2.0.0'
+    implementation files('libs/YouTubeAndroidPlayerApi.jar')
+    //AIzaSyABHNfZf4Qo2VhuKOKh9-baoOzr1SoGH4E //apikey
+    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.3'
+
+    implementation 'com.google.firebase:firebase-messaging:23.0.5'
+    implementation 'com.google.firebase:firebase-core:21.0.0'
+    implementation 'com.google.firebase:firebase-auth:21.0.5'
+    implementation 'com.google.firebase:firebase-firestore:24.1.2'
+    implementation 'com.google.firebase:firebase-storage:20.0.1'
+    implementation 'com.google.firebase:firebase-database:20.0.5'
+
+    implementation 'com.firebaseui:firebase-ui-database:2.3.0'
+    implementation 'com.google.android.gms:play-services-maps:18.0.2'
+    implementation 'androidx.gridlayout:gridlayout:1.0.0'
+    implementation 'androidx.mediarouter:mediarouter:1.3.0'
+
+    implementation platform('com.google.firebase:firebase-bom:29.0.0')
+    implementation 'com.google.android.gms:play-services-auth:20.2.0'
+
+    implementation 'ai.api:sdk:2.0.7@aar'
+    implementation 'ai.api:libai:1.4.8'
+
+    implementation 'com.hbb20:ccp:2.4.7'
+    implementation 'com.ss.bannerslider:bannerslider:2.0.0'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    implementation 'com.android.volley:volley:1.2.1'
+
+}
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.android.application'

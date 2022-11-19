@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ResetViaMobile">
+
+    <TextView
+        android:id="@+id/contactlInfotxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?actionBarSize"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/what_s_your_mobile_number"
+        android:letterSpacing="0.05"
+        android:gravity="fill_horizontal"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.hbb20.CountryCodePicker
+        android:id="@+id/codePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="20dp"
+        app:ccp_defaultPhoneCode="233"
+        app:ccp_contentColor="@color/holo_red_light"
+        app:ccp_showFlag="false"
+        app:ccp_showNameCode="false"
+        app:layout_constraintEnd_toStartOf="@id/resetPhoneNumber"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contactlInfotxt" />
+
+
+    <EditText
+        android:id="@+id/resetPhoneNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/pq_neutral_button"
+        android:hint="@string/_54874"
+        android:inputType="phone"
+        android:letterSpacing="0.04"
+        android:padding="10dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/codePicker"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/codePicker"
+        app:layout_constraintTop_toTopOf="@+id/codePicker"
+        tools:ignore="Autofill,TouchTargetSizeCheck" />
+
+
+    <Button
+        android:id="@+id/continueBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/pq_button"
+        android:textAllCaps="false"
+        android:letterSpacing="0.05"
+        android:outlineAmbientShadowColor="@android:color/transparent"
+        android:outlineSpotShadowColor="@android:color/transparent"
+        android:shadowColor="@android:color/transparent"
+        android:text="@string/verify"
+        android:textStyle="bold"
+        android:textColor="@color/white2"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/resetPhoneNumber" />
+
+
+    <ProgressBar
+        android:id="@+id/progressViaPhone"
+        android:layout_width="38dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="30dp"
+        android:indeterminateTint="@color/holo_red_light"
+        app:layout_constraintBottom_toBottomOf="@+id/continueBtn"
+        app:layout_constraintEnd_toEndOf="@+id/continueBtn"
+        app:layout_constraintTop_toTopOf="@+id/continueBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

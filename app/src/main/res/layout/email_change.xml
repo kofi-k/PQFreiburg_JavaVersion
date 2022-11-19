@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".EmailChange">
+        <TextView
+            android:id="@+id/emailInfotxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="?actionBarSize"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="@string/email_info"
+            android:gravity="fill_horizontal"
+            android:fontFamily="@font/segoe_ui"
+            android:textSize="18sp"
+            android:letterSpacing="0.05"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailTextLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Email"
+        android:letterSpacing="0.04"
+        android:orientation="vertical"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emailInfotxt"
+        app:startIconDrawable="@drawable/ic_mailot">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pq_neutral_button"
+            android:outlineAmbientShadowColor="@android:color/transparent"
+            android:outlineSpotShadowColor="@android:color/transparent"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:letterSpacing="0.04"
+            android:textSize="18sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+            android:id="@+id/isEmailVerified"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintEnd_toStartOf="@id/verifyNowTxt"
+            android:fontFamily="@font/segoe_ui"
+            android:text="Email verification status"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailTextLayout" />
+
+        <TextView
+            android:id="@+id/verifyNowTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/segoe_ui"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:text="verify now"
+            android:textColor="@color/holo_red_light"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/isEmailVerified"
+            app:layout_constraintStart_toEndOf="@+id/isEmailVerified"
+            app:layout_constraintTop_toTopOf="@+id/isEmailVerified" />
+
+        <ProgressBar
+            android:id="@+id/verifyNowTxtProgress"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:indeterminateTint="@color/holo_red_light"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/verifyNowTxt"
+            app:layout_constraintEnd_toEndOf="@+id/verifyNowTxt"
+            app:layout_constraintHorizontal_bias="0.888"
+            app:layout_constraintStart_toStartOf="@+id/verifyNowTxt"
+            app:layout_constraintTop_toTopOf="@+id/verifyNowTxt" />
+
+    <Button
+        android:id="@+id/verifyEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/pq_button"
+        android:letterSpacing="0.05"
+        android:text="@string/verify"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:outlineAmbientShadowColor="@android:color/transparent"
+        android:outlineSpotShadowColor="@android:color/transparent"
+        android:shadowColor="@android:color/transparent"
+        android:textColor="@color/white2"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emailTextLayout" />
+
+        <ProgressBar
+            android:id="@+id/EmailchangesProgress"
+            android:layout_width="32dp"
+            android:layout_height="31dp"
+            android:indeterminateTint="@color/holo_red_light"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/verifyEmail"
+            app:layout_constraintEnd_toEndOf="@+id/verifyEmail"
+            app:layout_constraintHorizontal_bias="0.888"
+            app:layout_constraintStart_toStartOf="@+id/verifyEmail"
+            app:layout_constraintTop_toTopOf="@+id/verifyEmail" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

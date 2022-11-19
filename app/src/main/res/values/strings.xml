@@ -1,0 +1,126 @@
+<resources>
+    <string name="app_name">PQ Freiburg</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="string_no_new_notifications_to_show">No new notifications to show</string>
+
+
+    <string name="terms">
+        <b>ABOUT US</b>
+        We Are a Reliable Digital Agency Digital well being is something we
+        have worked on for a long time and so we are good at our job. <i>Labelkin</i> has grown
+        to become a team of digital experts with rich portfolios to provide the service
+        you need. We are creative, innovative and very reliable in the industry.
+        ABOUT US We Are a Reliable Digital Agency Digital well being is something we
+        have worked on for a long time and so we are good at our job. <i>Labelkin</i>  has grown
+        to become a team of digital experts with rich portfolios to provide the service
+        you need. We are creative, innovative and very reliable in the industry.
+        ABOUT US We Are a Reliable Digital Agency Digital well being is something we
+        have worked on for a long time and so we are good at our job. <i>Labelkin</i>  has grown
+        to become a team of digital experts with rich portfolios to provide the service
+        you need. We are creative, innovative and very reliable in the industry.
+        <b>ABOUT US</b>
+        We Are a Reliable Digital Agency Digital well being is something we
+        have worked on for a long time and so we are good at our job. <i>Labelkin</i> has grown
+        to become a team of digital experts with rich portfolios to provide the service
+        you need. We are creative, innovative and very reliable in the industry.
+        ABOUT US We Are a Reliable Digital Agency Digital well being is something we
+        have worked on for a long time and so we are good at our job. <i>Labelkin</i>  has grown
+        to become a team of digital experts with rich portfolios to provide the service
+        you need. We are creative, innovative and very reliable in the industry.
+        ABOUT US We Are a Reliable Digital Agency Digital well being is something we
+        have worked on for a long time and so we are good at our job. <i>Labelkin</i>  has grown
+        to become a team of digital experts with rich portfolios to provide the service
+        you need. We are creative, innovative and very reliable in the industry.
+
+    </string>
+    <string name="name_info">
+        This is how your name will appear on your profile, so pick
+        a name you are comfortable with.
+    </string>
+    <string name="contact_info">
+        This is makes it easier for you to recover your account when
+        you forget your password and also for two-factor verification for robust security.
+    </string>
+    <string name="email_info">
+        This is makes it easier for you to login into your account, recover your account when
+        you forget your password.
+    </string>
+    <string name="resetcodeto_info">
+        We will send a verification code to your number
+    </string>
+    <string name="password_info">
+        To set new password, please enter your current password first
+    </string>
+    <string name="guide_info">
+        To complete your phone number verification, enter the 6-digit verification code.
+    </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="log_in">Log in</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgotten_your_password">Forgotten your password?</string>
+    <string name="reset_here"><b><u>Reset here.</u></b></string>
+    <string name="create_account">Create account</string>
+    <string name="or_sign_in_with">or sign in with</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="save_changes">Save changes</string>
+    <string name="user_message">User message</string>
+    <string name="light_theme">Light theme</string>
+    <string name="dark_theme">Dark theme</string>
+    <string name="use_system_default_theme">Use system default theme</string>
+    <string name="agree">Agree</string>
+    <string name="username">Username</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_up">Sign up</string>
+    <string name="terms_and_conditions">Terms and Conditions.</string>
+    <string name="notification_settings">Notification Settings</string>
+    <string name="theme">Theme</string>
+    <string name="help">Help</string>
+    <string name="security">Security</string>
+    <string name="what_s_your_mobile_number">What\'s your mobile number?</string>
+    <string name="_54874">54874…</string>
+    <string name="verify">Verify</string>
+    <string name="provide_email_address_to_receive_reset_link">Provide email address to receive reset link</string>
+    <string name="send_reset_link">Send Reset Link</string>
+    <string name="complete_verification">Complete Verification</string>
+    <string name="send_via_sms">Send via SMS</string>
+    <string name="call_me_instead">Call me instead</string>
+    <string name="report_issue">Report issue</string>
+    <string name="email_address">Email address</string>
+    <string name="subject_of_issue">Subject of issue</string>
+    <string name="tell_us_about_your_issue">Tell us about your issue</string>
+    <string name="send">Send</string>
+    <string name="cancel">Cancel</string>
+    <string name="password_confirmation">Password confirmation</string>
+    <string name="provide_your_password_to_proceed_with_email_change">Provide your password to proceed with email change</string>
+    <string name="confirm">Confirm</string>
+    <string name="profile_settings">Profile Settings</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="mobile_number">Mobile number</string>
+    <string name="user_name">User Name</string>
+    <string name="privacy_and_data_policy">Privacy and data policy</string>
+    <string name="please_choose_how_you_want_to_reset_your_password">Please choose how you want to reset your password</string>
+    <string name="via_phone">via phone</string>
+    <string name="via_email">via email</string>
+    <string name="forgot_your_password"><i><u>Forgot your password?</u></i></string>
+    <string name="verify_otp">Verify OTP</string>
+    <string name="provide_the_the_6_digit_code_sent_to_the_number_you_provided">Provide the 6 digit code sent to the number you provided.</string>
+    <string name="otp_code">OTP code</string>
+    <string name="turn_off_notifications">Turn off notifications</string>
+    <string name="show_notification_previews">Show notification previews</string>
+    <string name="allow_notification_sounds">Allow notification sounds</string>
+    <string name="user">User</string>
+    <string name="okay">Okay</string>
+    <string name="report_an_issue">Report an issue</string>
+    <string name="licenses">Licenses</string>
+    <string name="terms_and_privacy_policy">Terms and privacy policy</string>
+    <string name="help_center">Help center</string>
+    <string name="loading_pq_freiburg"><b>Loading...</b></string>
+    <string name="change_profile_photo">Change profile photo</string>
+    <string name="remove_profile_photo">Remove profile photo</string>
+    <string name="helper_text">Password should have at least 1: upper and lower case letter, number and symbol. Example aA@1</string>
+    <string name="bot_message">Bot message</string>
+</resources>

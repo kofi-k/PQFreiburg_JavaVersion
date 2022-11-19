@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white2">#121212</color>
+    <color name="white3">#343434</color>
+    <color name="darkpq">#343434</color>
+    <color name="pqblack">#2C2C2C</color>
+    <color name="pqcolorwhite">#E4E4E4</color>
+    <color name="zircon">#F4F2F2</color>
+    <color name="holo_red_light">#FA7F81</color>
+    <color name="wine">#9C1413</color>
+    <color name="twitter_color">#55ACEE</color>
+    <color name="dualMode">#2F8CC7E3</color>
+    <color name="grey">#bfbfbf</color>
+    <color name="lightGray">#E2F2F2F2</color>
+    <color name="disabledBtnBg">#D5999999</color>
+
+</resources>

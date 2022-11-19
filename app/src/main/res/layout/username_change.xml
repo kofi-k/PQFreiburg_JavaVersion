@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChangeUserName">
+
+    <TextView
+        android:id="@+id/nameInfotxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?actionBarSize"
+        android:gravity="fill_horizontal"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:letterSpacing="0.05"
+        android:text="@string/name_info"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/nameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameInfotxt">
+
+
+        <EditText
+            android:id="@+id/firstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:focusedByDefault="false"
+            android:hint="@string/first_name"
+            android:inputType="textPersonName"
+            android:letterSpacing="0.04"
+            android:padding="20dp"
+            android:text=""
+            android:textSize="20sp"
+            tools:ignore="Autofill" />
+
+
+        <EditText
+            android:id="@+id/lastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:focusedByDefault="false"
+            android:hint="@string/last_name"
+            android:inputType="textPersonName"
+            android:letterSpacing="0.04"
+            android:padding="20dp"
+            android:text=""
+            android:textSize="20sp"
+            tools:ignore="Autofill" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/saveChanges"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/pq_button"
+        android:outlineAmbientShadowColor="@android:color/transparent"
+        android:outlineSpotShadowColor="@android:color/transparent"
+        android:shadowColor="@android:color/transparent"
+        android:text="@string/save_changes"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white2"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameLayout" />
+
+    <ProgressBar
+        android:id="@+id/changesProgress"
+        android:layout_width="32dp"
+        android:layout_height="31dp"
+        android:indeterminateTint="@color/holo_red_light"
+        app:layout_constraintBottom_toBottomOf="@+id/saveChanges"
+        app:layout_constraintEnd_toEndOf="@+id/saveChanges"
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintStart_toStartOf="@+id/saveChanges"
+        app:layout_constraintTop_toTopOf="@+id/saveChanges" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

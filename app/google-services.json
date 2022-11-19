@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "108128146448",
+    "firebase_url": "https://pqfreiburg1-3-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "pqfreiburg1-3",
+    "storage_bucket": "pqfreiburg1-3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:108128146448:android:c26270c2c599f57bd96695",
+        "android_client_info": {
+          "package_name": "com.kofikay.pqfreiburg13"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "108128146448-fskck3cf1os7serf8n25jfkidgp40ej0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kofikay.pqfreiburg13",
+            "certificate_hash": "776dd70204adbf908eaab4a54f018476112130e8"
+          }
+        },
+        {
+          "client_id": "108128146448-qbba4j4r5koc95p6vpekk93spmhiic4l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKYWlQmDvMgHDCgDMN6bHx0oq6n0oZsNs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "108128146448-9em5jtq7tebeftsfu3v5mckipju8ib98.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

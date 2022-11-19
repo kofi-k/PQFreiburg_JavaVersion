@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:elevation="10dp"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/reportTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Report issue"
+                android:textStyle="bold"
+                android:textAlignment="viewStart"
+                android:textColor="@color/holo_red_light"
+                android:textSize="24sp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <EditText
+                android:id="@+id/Reportmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="20dp"
+                android:hint="Email address"
+                android:inputType="textEmailAddress"
+                android:letterSpacing="0.04"
+                android:minHeight="48dp"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@id/reportTitle" />
+
+            <EditText
+                android:id="@+id/reportSubject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:hint="Subject of issue"
+                android:inputType="textLongMessage"
+                android:letterSpacing="0.04"
+                android:minHeight="48dp"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@id/Reportmail" />
+
+            <EditText
+                android:id="@+id/reportBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:hint="Tell us about your issue"
+                android:inputType="textMultiLine"
+                android:letterSpacing="0.04"
+                android:minHeight="48dp"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@id/reportSubject" />
+
+            <Button
+                android:id="@+id/sendReport"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/pq_button"
+                android:letterSpacing="0.07"
+                android:outlineAmbientShadowColor="@android:color/transparent"
+                android:outlineSpotShadowColor="@android:color/transparent"
+                android:shadowColor="@android:color/transparent"
+                android:text="@string/send"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textColor="@color/white2"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/cancelReport"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/reportBody" />
+
+            <ProgressBar
+                android:id="@+id/reportProgress"
+                android:layout_width="38dp"
+                android:layout_height="40dp"
+                android:indeterminateTint="@color/holo_red_light"
+                app:layout_constraintBottom_toBottomOf="@+id/sendReport"
+                app:layout_constraintEnd_toEndOf="@+id/sendReport"
+                app:layout_constraintStart_toStartOf="@+id/sendReport"
+                app:layout_constraintTop_toTopOf="@+id/sendReport" />
+
+            <TextView
+                android:id="@+id/cancelReport"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:letterSpacing="0.15"
+                android:text="CANCEL"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/sendReport"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/sendReport"
+                app:layout_constraintTop_toTopOf="@+id/sendReport" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
